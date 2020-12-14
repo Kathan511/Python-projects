@@ -1,0 +1,14 @@
+#Alarm Clock
+import datetime
+ALH=int(input('Type Hour::'))
+ALM=int(input('Type Minute::'))
+ampm=input('AM or PM::')
+if ampm=='pm':
+  ALH=ALH+12
+while(1==1):
+  if (ALH==datetime.datetime.now().hour) and (ALM==datetime.datetime.now().minute):
+    print("WAKE UP")
+    break
+from IPython.display import Audio
+sound_file = 'https://www.soundjay.com/button/beep-01a.mp3'
+Audio(sound_file, autoplay=True)
