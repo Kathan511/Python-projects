@@ -1,0 +1,15 @@
+#Credit Card Validator
+card_number=list(input('Write numbers:').strip())
+check_digit=card_number.pop()
+card_number.reverse()
+PD=[]
+for index,digit in enumerate(card_number):
+  if index%2==0:
+    Ddigit=int(digit)*2
+    if Ddigit>9:
+      Ddigit=Ddigit-9
+    PD.append(Ddigit)
+  else:
+    PD.append(int(digit))
+total=int(check_digit) + sum(PD)
+print(total%10==0)
