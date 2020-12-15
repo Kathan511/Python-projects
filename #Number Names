@@ -1,0 +1,8 @@
+#Number Names
+import numToWord
+def num2let():
+    choose=int(input('Please Provide a Number To spell out:'))
+    print(numToWord.numToWord(choose))
+
+
+num2let()
