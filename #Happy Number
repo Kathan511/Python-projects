@@ -1,0 +1,25 @@
+#Happy Number
+def square(n):
+    s=0
+    while n>0:
+        d=n%10
+        s=s+d*d
+        n=n//10
+    if s>10:
+        return square(s)
+    else:
+        return s
+def happy_no(n):
+    s=square(n)
+    if s==1:
+        return True
+    elif s<10:
+        return False
+m=int(input("Enter a number::"))
+d=happy_no(m)
+if d:
+    print('Happy Number')
+else:
+    print('Not')
+
+
