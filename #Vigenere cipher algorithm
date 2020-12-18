@@ -1,0 +1,11 @@
+#Vigenere cipher algorithm
+from pycipher import Vigenere
+#Encryption of message
+a=Vigenere('LITE').encipher('ARUN')
+print(a)
+'''
+ouutput='LZNR
+'''
+#Decryption of massage
+b=Vigenere('LITE').decipher('LZNR')
+print(b)
