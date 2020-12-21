@@ -1,0 +1,7 @@
+def sam(lte):
+    sum=0
+    for i in range(lte[0],lte[1]+1):
+        sum=sum+i
+    print(sum)
+lte=[3,5]
+sam(lte)
