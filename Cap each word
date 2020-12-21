@@ -1,0 +1,8 @@
+import string
+def cap_word(text):
+    cap=string.capwords(text)
+    return cap
+print(cap_word('kathan soni'))
+'''
+OUTPUT:Kathan Soni
+'''
