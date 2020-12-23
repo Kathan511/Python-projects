@@ -7,7 +7,7 @@ def firstDigit(n) :
     # Remove last digit from number 
     # till only one digit is left 
     while n >= 10:  
-        n = n / 10; 
+        n = n // 10; 
       
     # return the first digit 
     return int(n) 
