@@ -18,3 +18,35 @@ def is_win(player, opponent):
             player == 'p' and opponent == 'r'):
         return True
 print(play())
+--------------------------By me
+import random
+
+
+def play():
+    game_on = True
+    while game_on == True:
+        user = input("'r' or 'p' or 's':")
+        computer = random.choice(['r', 'p', 's'])
+        if user == computer:
+            return 'Draw'
+        if Win(user, computer):
+            return 'user Won'
+        else:
+            return 'Computer Won!!'
+
+
+
+def Win(user, computer):
+    if (user == 'r' and computer == 's') or (user == 's' and computer == 'p') or (user == 'p' and computer == 'r'):
+        return True
+def RPS():
+    game_on=True
+    while game_on==True:
+        print(play())
+        choice=input("Do you want to play again?y or n: ").lower()
+        if choice=='y':
+            continue
+        else:
+            game_on=False
+            return 'Thank you for Playing.Have a good day!'
+print(RPS())
