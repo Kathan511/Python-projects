@@ -1,0 +1,9 @@
+-----You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
+def sort_array(source_array):
+    odd_num=[n for n in k if n%2!=0]
+    odd_num=sorted(odd_num)
+    for index,letter in enumerate(k):
+        if letter%2==0:
+            odd_num.insert(index,letter)
+    return odd_num        
+
