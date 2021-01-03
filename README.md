@@ -17,4 +17,4 @@ def lastDigit(n) :
     # return the last digit 
     return (n % 10) 
   
-->IF you want to sort list than type (List  name).sort() and if you want to sort string than type sorted((String name)).Sorted function will sort Each character into list type.If you want to refer Anagram Program.
+->IF you want to sort list than type (List  name).sort() and if you want to sort string than type sorted((String name)).Sorted function will sort Each character into list type.If you want to refer Anagram Program.You can also use sorted function in List.
